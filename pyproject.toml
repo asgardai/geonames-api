@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "geonames-api"
+version = "0.1.0"
+description = ""
+authors = ["Thomas Opsomer <thomas@asgard.ai>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.11"
+elasticsearch = {extras = ["async"], version = "^7.17.2"}
+pydantic = "^1.9.1"
+tqdm = "^4.64.0"
+cytoolz = "^0.11.2"
+python-dotenv = "^0.20.0"
+fastapi = "^0.78.0"
+pycountry = "^22.3.5"
+ftfy = "^6.1.1"
+postal = "^1.1.10"
+uvicorn = {extras = ["standard"], version = "^0.18.3"}
+textdistance = {extras = ["extras"], version = "^4.5.0"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
